@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shashl</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <h4>shashl</h4>
+        </div>
+        
+        <ul class="nav-list">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#products">Продукты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <a href="#" id="cart-toggle" class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l1 9h12l1-9h2M6 10h12M6 14h12M6 18h12" />
+            </svg>
+        </a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+        <section id="main">
+            <div class="full-width-image">
+                <img src="img/1.jpeg" alt="Full-width Image">
+                <div class="overlay">
+                    <h1>Откройте для себя мир ароматных шашлыков</h1>
+                    <p>Идеальное место для любителей мяса на огне</p>
+                    <button><a href="#questions">Подробнее</a></button>
+                </div>
+            </div>
+            </section>
+        <section id="about">
+            <h2>О компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - компания <strong>"shashl"</strong>, специализирующаяся на приготовлении ароматных шашлыков. Наша цель - предоставить нашим клиентам лучшие блюда на огне, используя только свежие и качественные ингредиенты.</p>
+                    <p>Мы гордимся тем, что наши шашлыки готовятся по традиционным рецептам, что делает их уникальными и неповторимыми.</p>
+                    <p>Наша команда состоит из опытных поваров, которые знают все тонкости приготовления мяса на углях. Мы стремимся создать атмосферу уюта и гостеприимства, чтобы каждый наш гость чувствовал себя как дома.</p>
+                    <p>Приходите к нам и откройте для себя мир настоящих шашлыков!</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/2.jpg" alt="О компании">
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Наши продукты</h2>
+            
+            <h3>Мясо</h3>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="img/1.jpeg" alt="Шашлык из свинины">
+                    <h3>Шашлык из свинины</h3>
+                    <p>500 г</p>
+                    <p>Цена: <span class="price">300</span> руб.</p>
+                    <p>Ароматный шашлык из свежей свинины, маринованный по традиционному рецепту.</p>
+                    <button class="add-to-cart" onclick="addItem('Шашлык из свинины', 300)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/1.jpeg" alt="Шашлык из курицы">
+                    <h3>Шашлык из курицы</h3>
+                    <p>400 г</p>
+                    <p>Цена: <span class="price">250</span> руб.</p>
+                    <p>Нежный шашлык из куриного филе, приготовленный на углях.</p>
+                    <button class="add-to-cart" onclick="addItem('Шашлык из курицы', 250)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/product3.jpg" alt="Шашлык из говядины">
+                    <h3>Шашлык из говядины</h3>
+                    <p>600 г</p>
+                    <p>Цена: <span class="price">350</span> руб.</p>
+                    <p>Сочный шашлык из отборной говядины, маринованный с пряностями.</p>
+                    <button class="add-to-cart" onclick="addItem('Шашлык из говядины', 350)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/product4.jpg" alt="Шашлык из баранины">
+                    <h3>Шашлык из баранины</h3>
+                    <p>500 г</p>
+                    <p>Цена: <span class="price">400</span> руб.</p>
+                    <p>Ароматный шашлык из свежей баранины, приготовленный по традиционному рецепту.</p>
+                    <button class="add-to-cart" onclick="addItem('Шашлык из баранины', 400)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/product5.jpg" alt="Шашлык из индейки">
+                    <h3>Шашлык из индейки</h3>
+                    <p>500 г</p>
+                    <p>Цена: <span class="price">320</span> руб.</p>
+                    <p>Нежный шашлык из филе индейки, маринованный с травами.</p>
+                    <button class="add-to-cart" onclick="addItem('Шашлык из индейки', 320)">Добавить в корзину</button>
+                    
+                </div>
+            </div>
+        
+            <h3>Напитки</h3>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="img/drink1.jpg" alt="Кола">
+                    <h3>Кола</h3>
+                    <p>0.5 л</p>
+                    <p>Цена: <span class="price">130</span> руб.</p>
+                    <p>Освежающий газированный напиток.</p>
+                    <button class="add-to-cart" onclick="addItem('Кола', 130)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/drink2.jpg" alt="Сок">
+                    <h3>Сок апельсиновый</h3>
+                    <p>1 л</p>
+                    <p>Цена: <span class="price">80</span> руб.</p>
+                    <p>Натуральный сок из свежих апельсинов.</p>
+                    <button class="add-to-cart" onclick="addItem('Сок апельсиновый', 80)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/drink3.jpg" alt="Пиво">
+                    <h3>Пиво</h3>
+                    <p>0.5 л</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Освежающее пиво с легким вкусом.</p>
+                    <button class="add-to-cart" onclick="addItem('Пиво', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/drink4.jpg" alt="Вино">
+                    <h3>Вино красное</h3>
+                    <p>0.75 л</p>
+                    <p>Цена: <span class="price">250</span> руб.</p>
+                    <p>Качественное красное вино, идеально сочетающееся с мясными блюдами.</p>
+                    <button class="add-to-cart" onclick="addItem('Вино красное', 250)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/drink5.jpg" alt="Минеральная вода">
+                    <h3>Минеральная вода</h3>
+                    <p>0.5 л</p>
+                    <p>Цена: <span class="price">40</span> руб.</p>
+                    <p>Освежающая минеральная вода, идеальная для утоления жажды.</p>
+                    <button class="add-to-cart" onclick="addItem('Минеральная вода', 40)">Добавить в корзину</button>
+                </div>
+            </div>
+        
+            <h3>Соусы</h3>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="img/sauce1.jpg" alt="Соус барбекю">
+                    <h3>Соус барбекю</h3>
+                    <p>250 г</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Ароматный соус для шашлыка с легкой сладостью.</p>
+                    <button class="add-to-cart" onclick="addItem('Соус барбекю', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/sauce2.jpg" alt="Чесночный соус">
+                    <h3>Чесночный соус</h3>
+                    <p>250 г</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Нежный соус с насыщенным чесночным вкусом.</p>
+                    <button class="add-to-cart" onclick="addItem('Чесночный соус', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/sauce3.jpg" alt="Томатный соус">
+                    <h3>Томатный соус</h3>
+                    <p>250 г</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Классический томатный соус, идеально подходящий к мясным блюдам.</p>
+                    <button class="add-to-cart" onclick="addItem('Томатный соус', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/sauce4.jpg" alt="Соус терияки">
+                    <h3>Соус терияки</h3>
+                    <p>250 г</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Сладкий соус с соевым вкусом, отлично подходит к мясу.</p>
+                    <button class="add-to-cart" onclick="addItem('Соус терияки', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/sauce5.jpg" alt="Соус сальса">
+                    <h3>Соус сальса</h3>
+                    <p>250 г</p>
+                    <p>Цена: <span class="price">100</span> руб.</p>
+                    <p>Острый соус с помидорами и специями, придающий пикантность блюдам.</p>
+                    <button class="add-to-cart" onclick="addItem('Соус сальса', 100)">Добавить в корзину</button>
+                </div>
+            </div>
+        
+            <h3>Закуски</h3>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="img/snack1.jpg" alt="Овощи гриль">
+                    <h3>Овощи гриль</h3>
+                    <p>300 г</p>
+                    <p>Цена: <span class="price">150</span> руб.</p>
+                    <p>Ассорти из свежих овощей, приготовленных на гриле.</p>
+                    <button class="add-to-cart" onclick="addItem('Овощи гриль', 150)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/snack2.jpg" alt="Салат Цезарь">
+                    <h3>Салат Цезарь</h3>
+                <p>>250 г</p>
+                    <p>Цена: <span class="price">200</span> руб.</p>
+                    <p>Классический салат с курицей, пармезаном и соусом Цезарь.</p>
+                    <button class="add-to-cart" onclick="addItem('Салат Цезарь', 200)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/snack3.jpg" alt="Картофель фри">
+                    <h3>Картофель фри</h3>
+                    <p>200 г</p>
+                    <p>Цена: <span class="price">170</span> руб.</p>
+                    <p>Хрустящий картофель фри, идеально подходящий к шашлыкам.</p>
+                    <button class="add-to-cart" onclick="addItem('Картофель фри', 170)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/snack4.jpg" alt="Куриные крылышки">
+                    <h3>Куриные крылышки</h3>
+                    <p>300 г</p>
+                    <p>Цена: <span class="price">250</span> руб.</p>
+                    <p>Хрустящие куриные крылышки, запеченные с пряностями.</p>
+                    <button class="add-to-cart" onclick="addItem('Куриные крылышки', 250)">Добавить в корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/snack5.jpg" alt="Чипсы">
+                    <h3>Чипсы</h3>
+                    <p>150 г</p>
+                    <p>Цена: <span class="price">140</span> руб.</p>
+                    <p>Хрустящие картофельные чипсы, идеально подходящие для закуски.</p>
+                    <button class="add-to-cart" onclick="addItem('Чипсы', 140)">Добавить в корзину</button>
+                </div>
+            </div>
+        </section>
+     
+        <section id="reviews">
+            <center><h2>Отзывы клиентов</h2></center>
+            <div class="review-container">
+                <div class="review-card">
+                    <h4 class="reviewer-name">Имя Рецензента</h4>
+                    <p class="review-text">Текст отзыва...</p>
+                </div>
+                <div class="review-card">
+                    <h4 class="reviewer-name">Имя Рецензента</h4>
+                    <p class="review-text">Текст отзыва...</p>
+                </div>
+                <div class="review-card">
+                    <h4 class="reviewer-name">Имя Рецензента</h4>
+                    <p class="review-text">Текст отзыва...</p>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+        <section id="add-review">
+            <center><h2>Оставьте свой отзыв</h2></center>
+            <form id="review-form">
+                <input type="text" id="review-name" placeholder="Ваше имя" required>
+                <textarea id="review-text" placeholder="Ваш отзыв" required></textarea>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </section>
+        <div class="cart-popup">
+            <div class="cart-header">
+                <h2>Корзина</h2>
+                <svg class="close-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul id="cart-items">
+                
+            </ul>
+            <div id="total">Итого: 0₽</div>
+            <button class="checkout-button">Оформить заказ</button>
+        </div>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> 12345, Город, Улица, Дом 1</p>
+                <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Часы работы:</strong> Пн-Пт: 9:00 - 18:00</p>
+                <p><strong>Социальные сети:</strong></p>
+                <ul>
+                    <li><a href="https://vk.com" target="_blank">VK</a></li>
+                    <li><a href="https://web.telegram.org/a/" target="_blank">Telegram</a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d419.7019618732554!2d34.06937482891695!3d44.95572162488414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1734449374350!5m2!1sru!2s"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        <script src="script.js"></script>
+        <script src="review.js"></script>
+        <script src="navbar.js"></script>
+      <script src="cart.js"></script>
+</body>
+</html>
